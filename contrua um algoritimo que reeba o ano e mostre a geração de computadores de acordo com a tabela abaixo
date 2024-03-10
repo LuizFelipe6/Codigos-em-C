@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+    int ano;
+    printf("digite o ano que falarei a geração do pc \n");
+    printf("Digite um ano: ");
+    scanf("%d",&ano);
+    
+    if (ano>=1945&&ano<=1959) {
+        printf("Primeira geracao\n");
+    } else if (ano>1959&&ano<=1965) {
+        printf("Segunda geracao\n");
+    } else if (ano>1965&&ano<=1972) {
+        printf("Terceira geracao\n");
+    } else if (ano>1972&&ano<=1985) {
+        printf("Quarta geracao\n");
+    } else if (ano>1985){
+        printf("Quinta geracao\n");
+    } else {
+        printf("Ano invalido\n");
+    }
+    
+    return 0;
+}
