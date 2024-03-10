@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    char calculo;
+    float n1,n2,r;
+    
+    
+printf("_________Calculadora_________________\n");
+printf("Soma______________(+) \n");
+printf("Sub________________ (-) \n");
+printf("Mult________________ (*) \n");
+printf("divi____________________ (/) \n");
+printf("pot______________________ (^) \n");
+printf("digite um numero: ");
+scanf("%f",&n1);
+printf("digite segundo numero: ");
+scanf("%f",&n2);
+printf("digite o sinal: ");
+scanf("%s",&calculo);
+       
+       switch (calculo){
+         case'+':
+             r = n1 + n2;
+             printf("a soma e %.2f", r);
+        break;
+        
+         case'-':
+             r = n1 - n2;
+             printf("a sub e %.2f", r);
+        break;
+        
+         case'*':
+            r = n1 * n2;
+             printf("a mult e %.2f", r);
+        break;
+        
+         case'/':
+             r = n1 / n2;
+             printf("a div e %.2f", r);
+        break;
+        
+         case'^':
+            r = pow(n1 , n2);
+            printf("a pont e %.2f", r);
+        break;
+        default:
+    printf("Operador invalido\n");
+     }
+         return 0;
+}
