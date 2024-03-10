@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int maca;
+    float p;
+    printf("digite o numero de maça comprada  \n");
+    scanf("%i",&maca);
+    
+    if(maca<12){
+        p=maca*0.3;
+    }else{
+        p=maca*0.25;
+    }
+    printf("valor da conta e R$%.2f",p);
+    return 0;
+}
