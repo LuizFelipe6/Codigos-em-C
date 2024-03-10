@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    float n1,n2,n3,media,soma=0;
+    int aluno=40;
+    for (int x=1; x<=aluno;x++){
+    printf("Qual a sua primeira nota %d \n",x);
+    printf("Nota 1 \n");
+     scanf("%f",&n1);
+     printf("Nota 2\n");
+     scanf("%f",&n2);
+      printf("Nota 3\n");
+    scanf("%f",&n3);
+    
+    media=n1+n2+n3/n3;
+    soma+=media;
+    }
+    printf("sua nota e %.2f",media);
+return 0;
+}

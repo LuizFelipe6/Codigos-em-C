@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char nome[50];
+    char sexo[50];
+    int i,m=0,p=0,s=0;
+    
+    while (1) {
+        printf("Qual o seu nome?\n");
+        scanf("%s", nome);
+        if (strcmp(nome, "fim") == 0) {
+            break;
+        }
+        
+        printf("Qual a sua idade?\n");
+        scanf("%d", &i);
+        if (i<0) {
+            break; 
+        }
+        
+        printf("Qual o seu sexo?\n");
+        scanf("%s",sexo);
+        
+        if (strcmp(sexo, "feminino") == 0) {
+            m++; 
+        }
+        
+        p++;
+        s+=i;
+    }
+    
+    if (p>0) {
+        float i=s/(float) p;
+        printf("Número de mulheres: %d\n",m);
+        printf("Idade média das pessoas: %.2f\n",i);
+    } else {
+        printf("Nenhuma pessoa foi cadastrada.\n");
+    }
+    
+    return 0;
+}

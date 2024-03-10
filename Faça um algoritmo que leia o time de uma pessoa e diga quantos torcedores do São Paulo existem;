@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char time[50];
+    int saopaulo = 0;
+
+    printf("Digite o seu time: ");
+    scanf("%s", time);
+    for (int i = 2; i <= 5; i++){
+        printf("Digite o time da pessoa %d: ", i);
+        scanf("%s", time);
+        if (strcmp(time, "Sao Paulo") == 0 || strcmp(time, "São Paulo") == 0){
+            saopaulo++;
+        }
+    } printf("Existem %d torcedores do Sao Paulo.\n", saopaulo);
+
+    return 0;
+}

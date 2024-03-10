@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int x,z,c;
+    x=1;
+    while (x<=10){
+     printf("digite um numero ");
+     scanf("%i",&x);
+     z=x*2;
+     printf("o dobro de %d e %d ",x,z);
+     x=x+1;
+    }
+}
+    

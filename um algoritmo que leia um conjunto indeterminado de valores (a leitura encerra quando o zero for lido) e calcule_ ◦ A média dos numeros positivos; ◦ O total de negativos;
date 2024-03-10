@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int z;
+    int x;
+    z=1;
+    x=-1;
+    for(z=1;z<=8;z++){
+    printf("%d",z);
+    }
+   
+    for(x=-1;x>=-16;x--){
+    printf("%d",x);
+    }
+    
+      printf("\n");
+        
+        if (z>0){
+        z=z-1;
+        printf("quantidade de numero possitivo e %i \n",z);
+        }
+        else (x>=0);
+        x=(-x)+(-1);
+        printf("quantidade de numeros negativo e %d \n",x);
+}

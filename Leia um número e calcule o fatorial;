@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+int b,n;
+printf("calcular seu fatorial: ");
+scanf("%d",&n);
+
+for(b=1;n>1;n=n-1)
+b=b*n;
+
+printf("\nFatorial calculado: %d",b);
+return 0;
+}

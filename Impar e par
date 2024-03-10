@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int x,y=0,z=0;
+    printf("escolha um numero \n");
+    scanf("%d",&x);
+    for(int i = 1;i <= x;i++){
+    printf("o numero e %d\n",i);
+    if(i % 2 == 0){
+        y++;
+    }else{
+        z++;
+        }
+    }
+    printf("os numeros par e %d\n",y);
+    printf("os numeros impa e %d\n",z);
+}
